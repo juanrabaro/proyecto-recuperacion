@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .navegador {
+        @include flex(row, space-between, center);
+
+        .navegador__enlace-titulo {
+            text-decoration: none;
+            color: black;
+            width: 18%;
+
+            .enlace-titulo__titulo {
+                width: 100%;
+                display: flex;
+                gap: 5px;
+            }
+        }
+        .navegador__enlaces {
+            display: flex;
+            flex-wrap: wrap;
+            width: 280px;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+}
