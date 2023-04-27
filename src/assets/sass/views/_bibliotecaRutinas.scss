@@ -1,11 +1,87 @@
 main {
     width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+footer {
+    margin-top: 142px;
 }
 
 .nuevo-y-buscador {
-    @include flex(row, center, center);
+    @include flex(row, space-between, center);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .nuevo-y-buscador__botones {
+        @include flex(row, center, center);
+        gap: 20px;
+
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            width: 160px;
+        }
+    }
+    
+    .nuevo-y-buscador__buscador {
+        @include flex(row, center, center);
+        gap: 20px;
+
+        input {
+            padding: 5px;
+            border-radius: 5px;
+            width: 160px;
+        }
+    }
 }
 
 .carpetas-y-rutinas {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    column-gap: 20px;
+    text-decoration: none;
 
+    .carpetas-y-rutinas__enlace-elemento {
+        text-decoration: none;
+
+        .enlace-elemento__elemeto {
+            background-color: rgb(75, 75, 75);
+            border-radius: 5px;
+            height: 110px;
+            color: black;
+    
+            .elemento__titulos {
+                @include flex(row, space-between, center);
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: rgb(157, 10, 10);
+                border-radius: 5px;
+    
+                .titulos__rutina-ejemplo {
+                    padding-left: 50px; 
+                }
+                .titulos__editar-borrar {
+                    @include flex(row, center, center);
+                    gap: 5px;
+                }
+                button {
+                    background-color: rgb(157, 10, 10);
+                    border: 0px;
+                }
+                button:hover {
+                    background-color: black;
+                }
+            }
+            .elemento__descripcion {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }

@@ -35,7 +35,7 @@ footer .footer .footer__ul li a {
 header {
   width: 100%;
   background-color: #6e6e6e;
-  padding: 30px 40px;
+  padding: 40px;
 }
 
 header .navegador {
@@ -150,13 +150,105 @@ main {
 
 main {
   width: 100%;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+footer {
+  margin-top: 142px;
 }
 
 .nuevo-y-buscador {
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.nuevo-y-buscador .nuevo-y-buscador__botones {
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   display: flex;
+}
+
+.nuevo-y-buscador .nuevo-y-buscador__botones button {
+  width: 160px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nuevo-y-buscador .nuevo-y-buscador__buscador {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.nuevo-y-buscador .nuevo-y-buscador__buscador input {
+  width: 160px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.carpetas-y-rutinas {
+  grid-template-rows: auto auto;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  text-decoration: none;
+  display: grid;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento {
+  text-decoration: none;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto {
+  height: 110px;
+  color: #000;
+  background-color: #4b4b4b;
+  border-radius: 5px;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos {
+  background-color: #9d0a0a;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos .titulos__rutina-ejemplo {
+  padding-left: 50px;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos .titulos__editar-borrar {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos button {
+  background-color: #9d0a0a;
+  border: 0;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos button:hover {
+  background-color: #000;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__descripcion {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
