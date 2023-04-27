@@ -1,0 +1,11 @@
+main {
+    width: 100%;
+}
+
+.nuevo-y-buscador {
+    @include flex(row, center, center);
+}
+
+.carpetas-y-rutinas {
+
+}

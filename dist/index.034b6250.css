@@ -148,4 +148,15 @@ main {
   display: flex;
 }
 
+main {
+  width: 100%;
+}
+
+.nuevo-y-buscador {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */
