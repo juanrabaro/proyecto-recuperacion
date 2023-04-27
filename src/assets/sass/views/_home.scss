@@ -11,25 +11,43 @@ main {
 
 .recuadro1 {
     display: flex;
+    justify-content: space-between;
     margin-top: 0px;
 
     .recuadro1__texto-derecha {
         background-color: red;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
     .recuadro1__texto-izquierda {
         background-color: black;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
         color: white;
     }
 }
 
 .recuadro2 {
     display: flex;
+    justify-content: space-between;
     
     .recuadro2__texto-derecha {
         background-color: black;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
         color: white;
     }
     .recuadro2__texto-izquierda {
         background-color: red;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
     }
 }
