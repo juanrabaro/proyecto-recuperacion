@@ -1,14 +1,14 @@
-main {
+.main-biblioteca {
     width: 100%;
     padding-left: 200px;
     padding-right: 200px;
 }
 
-footer {
+.footer-biblioteca {
     margin-top: 142px;
 }
 
-.nuevo-y-buscador {
+.main-biblioteca__nuevo-y-buscador {
     @include flex(row, space-between, center);
     padding-top: 60px;
     padding-bottom: 60px;
