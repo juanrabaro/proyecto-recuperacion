@@ -2,10 +2,8 @@
     width: 100%;
     padding-left: 200px;
     padding-right: 200px;
-}
-
-.footer-biblioteca {
-    margin-top: 142px;
+    padding-bottom: 100px;
+    background-color: rgb(28, 28, 28);
 }
 
 .main-biblioteca__nuevo-y-buscador {
@@ -18,6 +16,8 @@
         gap: 20px;
 
         button {
+            background-color: orangered;
+            color: white;
             padding: 10px;
             border-radius: 5px;
             width: 160px;
@@ -27,8 +27,10 @@
     .nuevo-y-buscador__buscador {
         @include flex(row, center, center);
         gap: 20px;
+        color: white;
 
         input {
+            background-color: orangered;
             padding: 5px;
             border-radius: 5px;
             width: 160px;
@@ -48,10 +50,10 @@
         text-decoration: none;
 
         .enlace-elemento__elemeto {
-            background-color: rgb(75, 75, 75);
+            background-color: rgb(35, 35, 35);
             border-radius: 5px;
             height: 110px;
-            color: black;
+            color: white;
     
             .elemento__titulos {
                 @include flex(row, space-between, center);
@@ -59,7 +61,7 @@
                 padding-right: 10px;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                background-color: rgb(157, 10, 10);
+                background-color: orangered;
                 border-radius: 5px;
     
                 .titulos__rutina-ejemplo {
@@ -70,7 +72,8 @@
                     gap: 5px;
                 }
                 button {
-                    background-color: rgb(157, 10, 10);
+                    background-color: orangered;
+                    color: white;
                     border: 0px;
                 }
                 button:hover {

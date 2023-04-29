@@ -6,7 +6,7 @@
 
 footer {
   width: 100%;
-  background-color: #6e6e6e;
+  background-color: #232323;
   padding: 50px;
 }
 
@@ -28,13 +28,13 @@ footer .footer .footer__ul li {
 }
 
 footer .footer .footer__ul li a {
-  color: #000;
+  color: #c6c6c6;
   text-decoration: none;
 }
 
 header {
   width: 100%;
-  background-color: #6e6e6e;
+  background-color: #232323;
   padding: 40px;
 }
 
@@ -53,6 +53,7 @@ header .navegador .navegador__enlace-titulo {
 
 header .navegador .navegador__enlace-titulo .enlace-titulo__titulo {
   width: 100%;
+  color: #ff4500;
   gap: 5px;
   display: flex;
 }
@@ -71,9 +72,13 @@ header .navegador .navegador__enlaces ul {
   display: flex;
 }
 
-header .navegador .navegador__enlaces ul a {
-  color: #000;
+header .navegador .navegador__enlaces ul li a {
+  color: #fff;
   text-decoration: none;
+}
+
+header .navegador .navegador__enlaces ul li .enlaces__resaltado-home {
+  color: #ff4500;
 }
 
 main {
@@ -99,7 +104,7 @@ main {
   width: 50%;
   text-align: center;
   color: #fff;
-  background-color: #000;
+  background-color: #1c1c1c;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -110,7 +115,7 @@ main {
 .recuadro1 .recuadro1__texto-izquierda {
   width: 50%;
   text-align: center;
-  background-color: red;
+  background-color: #ff4500;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -127,7 +132,7 @@ main {
 .recuadro2 .recuadro2__texto-derecha {
   width: 50%;
   text-align: center;
-  background-color: red;
+  background-color: #ff4500;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -140,7 +145,7 @@ main {
   width: 50%;
   text-align: center;
   color: #fff;
-  background-color: #000;
+  background-color: #1c1c1c;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -150,12 +155,10 @@ main {
 
 .main-biblioteca {
   width: 100%;
+  background-color: #1c1c1c;
+  padding-bottom: 100px;
   padding-left: 200px;
   padding-right: 200px;
-}
-
-.footer-biblioteca {
-  margin-top: 142px;
 }
 
 .main-biblioteca__nuevo-y-buscador {
@@ -176,12 +179,15 @@ main {
 }
 
 .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__botones button {
+  color: #fff;
   width: 160px;
+  background-color: #ff4500;
   border-radius: 5px;
   padding: 10px;
 }
 
 .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador {
+  color: #fff;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -191,6 +197,7 @@ main {
 
 .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador input {
   width: 160px;
+  background-color: #ff4500;
   border-radius: 5px;
   padding: 5px;
 }
@@ -209,13 +216,13 @@ main {
 
 .carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto {
   height: 110px;
-  color: #000;
-  background-color: #4b4b4b;
+  color: #fff;
+  background-color: #232323;
   border-radius: 5px;
 }
 
 .carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos {
-  background-color: #9d0a0a;
+  background-color: #ff4500;
   border-radius: 5px;
   flex-direction: row;
   justify-content: space-between;
@@ -237,7 +244,8 @@ main {
 }
 
 .carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos button {
-  background-color: #9d0a0a;
+  color: #fff;
+  background-color: #ff4500;
   border: 0;
 }
 
