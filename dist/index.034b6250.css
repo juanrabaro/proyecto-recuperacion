@@ -259,4 +259,226 @@ main {
   padding-bottom: 10px;
 }
 
+.main-creacion-rutina {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 50px 200px 100px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion {
+  background-color: #232323;
+  padding: 30px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 {
+  padding: 20px 150px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset {
+  border: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset label {
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset input {
+  width: 75%;
+  border-radius: 5px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset .input2 {
+  height: 50px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+  width: 60%;
+  border: 3px solid #ff4500;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .nuevo-ejercicio__titulo {
+  color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio {
+  padding: 20px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset {
+  border: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset label {
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset .input2 {
+  height: 50px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
+  color: #fff;
+  height: 65px;
+  width: 65px;
+  background-color: #ff4500;
+  border: 1px solid #ff4500;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.main-creacion-rutina .main-creacion-rutina__boton-finalizar {
+  color: #fff;
+  background-color: #ff4500;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+  display: block;
+}
+
+.main-creacion-rutina {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 50px 200px 100px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion {
+  background-color: #232323;
+  padding: 30px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 {
+  padding: 20px 150px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset {
+  border: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset label {
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset input {
+  width: 75%;
+  border-radius: 5px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset .input2 {
+  height: 50px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+  width: 60%;
+  border: 3px solid #ff4500;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .nuevo-ejercicio__titulo {
+  color: #fff;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio {
+  padding: 20px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset {
+  border: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  display: flex;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset label {
+  color: #fff;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
+  width: 200px;
+  border-radius: 5px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset .input2 {
+  height: 50px;
+}
+
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
+  color: #fff;
+  height: 65px;
+  width: 65px;
+  background-color: #ff4500;
+  border: 1px solid #ff4500;
+  border-radius: 100%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.main-creacion-rutina .main-creacion-rutina__boton-finalizar {
+  color: #fff;
+  background-color: #ff4500;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+  display: block;
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */
