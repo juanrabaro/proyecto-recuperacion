@@ -1,0 +1,35 @@
+.main-visualizacion-rutina {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: rgb(28, 28, 28);
+
+    .main-visualizacion-rutina__datos {
+        background-color: rgb(35, 35, 35);
+        padding: 30px;
+        color: white;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        gap: 40px;
+
+        h1 {
+            padding-bottom: 10px;
+        }
+        .datos__ejercicio {
+            width: 70%;
+            background-color: rgb(49, 49, 49);
+            padding: 20px;
+            border-radius: 10px;
+            
+            h2 {
+                color: orangered
+            }
+            div {
+                @include flex(row, space-between, center);
+                margin-top: 10px;
+            }
+        }
+    }
+}
