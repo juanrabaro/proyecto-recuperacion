@@ -1,0 +1,36 @@
+.main-cuenta {
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    background-color: rgb(28, 28, 28);
+
+    .main-cuenta__datos {
+        background-color: rgb(35, 35, 35);
+        padding: 30px;
+        color: white;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        gap: 40px;
+
+        img {
+            width: 200px;
+        }
+        .datos__informacion {
+
+            div {
+                @include flex(row, space-between, center);
+                gap: 80px;
+                margin-bottom: 10px;
+            }
+        }
+        button {
+            padding: 20px;
+            background-color: orangered;
+            border-radius: 10px;
+            border: 0px;
+            color: white;
+        }
+    }
+}

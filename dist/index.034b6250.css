@@ -481,4 +481,43 @@ main {
   display: block;
 }
 
+.main-cuenta {
+  width: 100%;
+  background-color: #1c1c1c;
+  padding: 50px 200px 100px;
+}
+
+.main-cuenta .main-cuenta__datos {
+  color: #fff;
+  background-color: #232323;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  display: flex;
+}
+
+.main-cuenta .main-cuenta__datos img {
+  width: 200px;
+}
+
+.main-cuenta .main-cuenta__datos .datos__informacion div {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.main-cuenta .main-cuenta__datos button {
+  color: #fff;
+  background-color: #ff4500;
+  border: 0;
+  border-radius: 10px;
+  padding: 20px;
+}
+
 /*# sourceMappingURL=index.034b6250.css.map */
