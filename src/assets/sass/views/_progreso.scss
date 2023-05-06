@@ -5,5 +5,43 @@
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: rgb(28, 28, 28);
+    color: white;
 
+    .main-progreso__add-progreso {
+        @include flex(column, center, center);
+        margin-bottom: 50px;
+
+        h1 {
+            margin-bottom: 20px;
+        }
+        p {
+            width: 80%;
+        }
+        form {
+            margin-top: 20px;
+            fieldset {
+                border: 0px;
+                text-align: right;
+            }
+        }
+    }
+    .main-progreso__ver-progreso {
+        h2 {
+            margin-bottom: 10px;
+        }
+        .ver-progreso__contenedores {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 30px;
+
+            .contenedores__contenedor {
+                @include flex(column, center, center);
+                background-color: rgb(35, 35, 35);
+                border: 3px solid orangered;
+                border-radius: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+    }
 }
