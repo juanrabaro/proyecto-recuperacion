@@ -1,9 +1,86 @@
 .main-control-usuario {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: rgb(28, 28, 28);
+    color: white;
+    @include flex(row, space-between, center);
 
+    .main-control-usuario__crear-cuenta {
+        width: 48%;
+        height: 350px;
+        background-color: rgb(35, 35, 35);
+        padding: 25px;
+        border-radius: 10px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        form {
+            @include flex(column, left, center);
+            margin-left: 50px;
+            margin-right: 50px;
+            gap: 8px;
+            height: 150px;
+
+            .terminos {
+                @include flex(row, space-around, center);
+            }
+            fieldset {
+                border: 0px;
+                width: 100%;
+                @include flex(row, space-between, center);
+            }
+        }
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding: 12px;
+            border: 0px;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+        }
+    }
+    .main-control-usuario__iniciar-sesion {
+        width: 48%;
+        height: 350px;
+        background-color: rgb(35, 35, 35);
+        padding: 25px;
+        border-radius: 10px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        form {
+            @include flex(column, left, center);
+            margin-left: 50px;
+            margin-right: 50px;
+            gap: 8px;
+            height: 150px;
+
+            fieldset {
+                border: 0px;
+                width: 100%;
+                @include flex(row, space-between, center);
+            }
+        }
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            padding: 12px;
+            border: 0px;
+            border-radius: 10px;
+            background-color: orangered;
+            color: white;
+        }
+    }
 }

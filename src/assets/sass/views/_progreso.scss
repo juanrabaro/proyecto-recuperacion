@@ -1,7 +1,7 @@
 .main-progreso {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: rgb(28, 28, 28);
@@ -19,9 +19,27 @@
         }
         form {
             margin-top: 20px;
+
             fieldset {
                 border: 0px;
                 text-align: right;
+                margin-bottom: 5px;
+
+                input {
+                    border-radius: 5px;
+                    height: 20px;
+                    background-color: rgb(35, 35, 35);
+                    border: 2px solid orangered;
+                }
+                button {
+                    color: white;
+                    background-color: orangered;
+                    padding: 6px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    border-radius: 5px;
+                    border: 0px;
+                }
             }
         }
     }
@@ -39,8 +57,8 @@
                 background-color: rgb(35, 35, 35);
                 border: 3px solid orangered;
                 border-radius: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
             }
         }
     }
