@@ -4,10 +4,10 @@
     padding-right: 200px;
     padding-bottom: 100px;
     padding-top: 50px;
-    background-color: rgb(28, 28, 28);
+    background-color: $main;
 
     .main-visualizacion-rutina__datos {
-        background-color: rgb(35, 35, 35);
+        background-color: $resaltado;
         padding: 30px;
         color: white;
         border-radius: 20px;
@@ -19,12 +19,14 @@
         }
         .datos__ejercicio {
             width: 70%;
-            background-color: rgb(49, 49, 49);
+            background-color: $masResaltado;
             padding: 20px;
             border-radius: 10px;
             
             h2 {
-                color: orangered
+                background: $degradado;
+                -webkit-background-clip: text;
+                color: transparent;
             }
             div {
                 @include flex(row, space-between, center);

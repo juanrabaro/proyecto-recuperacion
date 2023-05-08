@@ -4,14 +4,14 @@
     padding-right: 10%;
     padding-bottom: 100px;
     padding-top: 50px;
-    background-color: rgb(28, 28, 28);
+    background-color: $main;
     color: white;
     @include flex(row, space-between, center);
 
     .main-control-usuario__crear-cuenta {
         width: 48%;
         height: 350px;
-        background-color: rgb(35, 35, 35);
+        background-color: $resaltado;
         padding: 25px;
         border-radius: 10px;
 
@@ -43,14 +43,14 @@
             padding: 12px;
             border: 0px;
             border-radius: 10px;
-            background-color: orangered;
+            background: $degradado;
             color: white;
         }
     }
     .main-control-usuario__iniciar-sesion {
         width: 48%;
         height: 350px;
-        background-color: rgb(35, 35, 35);
+        background-color: $resaltado;
         padding: 25px;
         border-radius: 10px;
 
@@ -79,7 +79,7 @@
             padding: 12px;
             border: 0px;
             border-radius: 10px;
-            background-color: orangered;
+            background: $degradado;
             color: white;
         }
     }

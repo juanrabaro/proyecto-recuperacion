@@ -3,7 +3,7 @@
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 100px;
-    background-color: rgb(28, 28, 28);
+    background-color: $main;
 }
 
 .main-biblioteca__nuevo-y-buscador {
@@ -16,11 +16,12 @@
         gap: 20px;
 
         button {
-            background-color: orangered;
+            background: $degradado;
             color: white;
             padding: 10px;
             border-radius: 5px;
             width: 160px;
+            border: 0px;
         }
     }
     
@@ -29,62 +30,63 @@
         gap: 20px;
         color: white;
 
+        img {
+            width: 30px;
+        }
         input {
-            background-color: orangered;
+            background: $degradado;
             padding: 5px;
             border-radius: 5px;
             width: 160px;
+            border: 0px;
+            color: white;
         }
     }
 }
 
 .carpetas-y-rutinas {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 350px;
     row-gap: 20px;
     column-gap: 20px;
     text-decoration: none;
 
-    .carpetas-y-rutinas__enlace-elemento {
-        text-decoration: none;
+    .carpetas-y-rutinas__elemeto {
+        background: $resaltado;
+        border-radius: 5px;
+        color: white;
 
-        .enlace-elemento__elemeto {
-            background-color: rgb(35, 35, 35);
+        .elemento__titulos {
+            @include flex(row, space-between, center);
+            padding-left: 20px;
+            padding-right: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: $degradado;
             border-radius: 5px;
-            height: 110px;
-            color: white;
-    
-            .elemento__titulos {
-                @include flex(row, space-between, center);
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                background-color: orangered;
-                border-radius: 5px;
-    
-                .titulos__rutina-ejemplo {
-                    padding-left: 50px; 
-                }
-                .titulos__editar-borrar {
-                    @include flex(row, center, center);
-                    gap: 5px;
-                }
-                button {
-                    background-color: orangered;
-                    color: white;
-                    border: 0px;
-                }
-                button:hover {
-                    background-color: black;
+
+            img {
+                width: 40px;
+            }
+            .titulos__titulo {
+                text-decoration: none;
+                color: white;
+            }
+            .titulos__iconos {
+                a {
+                    img {
+                        width: 30px;
+                    }
                 }
             }
-            .elemento__descripcion {
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 10px;
-            }
+        }
+        .elemento__descripcion {
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            height: 80%;
         }
     }
 }

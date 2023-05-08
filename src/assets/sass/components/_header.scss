@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background-color: rgb(35, 35, 35);
+    background-color: $resaltado;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 40px;
@@ -11,14 +11,18 @@ header {
 
         .navegador__enlace-titulo {
             text-decoration: none;
-            color: black;
             width: 18%;
 
             .enlace-titulo__titulo {
                 width: 100%;
                 display: flex;
                 gap: 5px;
-                color: orangered;
+
+                h1 {
+                    background: $degradado;
+                    -webkit-background-clip: text;
+                    color: transparent;
+                }
             }
         }
         .navegador__enlaces {
@@ -39,8 +43,9 @@ header {
                         color: white;
                     }
                     .enlaces__resaltado-home {
-                        color: orangered;
-                        
+                        background: $degradado;
+                        -webkit-background-clip: text;
+                        color: transparent;
                     }
                 }
             }

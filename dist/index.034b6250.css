@@ -6,7 +6,7 @@
 
 footer {
   width: 100%;
-  background-color: #232323;
+  background-color: #2a2a2a;
   padding: 50px;
 }
 
@@ -34,7 +34,7 @@ footer .footer .footer__ul li a {
 
 header {
   width: 100%;
-  background-color: #232323;
+  background-color: #2a2a2a;
   padding: 40px;
 }
 
@@ -46,16 +46,20 @@ header .navegador {
 }
 
 header .navegador .navegador__enlace-titulo {
-  color: #000;
   width: 18%;
   text-decoration: none;
 }
 
 header .navegador .navegador__enlace-titulo .enlace-titulo__titulo {
   width: 100%;
-  color: #ff4500;
   gap: 5px;
   display: flex;
+}
+
+header .navegador .navegador__enlace-titulo .enlace-titulo__titulo h1 {
+  background: linear-gradient(red, #ff6b00);
+  -webkit-background-clip: text;
+  color: #0000;
 }
 
 header .navegador .navegador__enlaces {
@@ -78,7 +82,9 @@ header .navegador .navegador__enlaces ul li a {
 }
 
 header .navegador .navegador__enlaces ul li .enlaces__resaltado-home {
-  color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
+  -webkit-background-clip: text;
+  color: #0000;
 }
 
 main {
@@ -115,7 +121,7 @@ main {
 .recuadro1 .recuadro1__texto-izquierda {
   width: 50%;
   text-align: center;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -132,7 +138,7 @@ main {
 .recuadro2 .recuadro2__texto-derecha {
   width: 50%;
   text-align: center;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -181,7 +187,8 @@ main {
 .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__botones button {
   color: #fff;
   width: 160px;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 5px;
   padding: 10px;
 }
@@ -195,68 +202,62 @@ main {
   display: flex;
 }
 
+.main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador img {
+  width: 30px;
+}
+
 .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador input {
   width: 160px;
-  background-color: #ff4500;
+  color: #fff;
+  background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 5px;
   padding: 5px;
 }
 
 .carpetas-y-rutinas {
-  grid-template-rows: auto auto;
-  grid-template-columns: 50% 50%;
+  height: 350px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   text-decoration: none;
   display: grid;
 }
 
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento {
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto {
+  color: #fff;
+  background: #2a2a2a;
+  border-radius: 5px;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto .elemento__titulos {
+  background: linear-gradient(red, #ff6b00);
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px 10px 20px;
+  display: flex;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto .elemento__titulos img {
+  width: 40px;
+}
+
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto .elemento__titulos .titulos__titulo {
+  color: #fff;
   text-decoration: none;
 }
 
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto {
-  height: 110px;
-  color: #fff;
-  background-color: #232323;
-  border-radius: 5px;
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto .elemento__titulos .titulos__iconos a img {
+  width: 30px;
 }
 
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos {
-  background-color: #ff4500;
-  border-radius: 5px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  display: flex;
-}
-
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos .titulos__rutina-ejemplo {
-  padding-left: 50px;
-}
-
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos .titulos__editar-borrar {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  display: flex;
-}
-
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos button {
-  color: #fff;
-  background-color: #ff4500;
-  border: 0;
-}
-
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__titulos button:hover {
-  background-color: #000;
-}
-
-.carpetas-y-rutinas .carpetas-y-rutinas__enlace-elemento .enlace-elemento__elemeto .elemento__descripcion {
-  text-align: center;
+.carpetas-y-rutinas .carpetas-y-rutinas__elemeto .elemento__descripcion {
+  height: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 20px;
 }
 
 .main-creacion-rutina {
@@ -266,7 +267,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion {
-  background-color: #232323;
+  background-color: #2a2a2a;
   padding: 30px;
 }
 
@@ -302,8 +303,8 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+  border: 3px solid linear-gradient(red, #ff6b00);
   width: 60%;
-  border: 3px solid #ff4500;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -347,11 +348,11 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
+  border: 1px solid linear-gradient(red, #ff6b00);
   color: #fff;
   height: 65px;
   width: 65px;
-  background-color: #ff4500;
-  border: 1px solid #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border-radius: 100%;
   margin-top: 20px;
   margin-left: auto;
@@ -361,12 +362,13 @@ main {
 
 .main-creacion-rutina .main-creacion-rutina__boton-finalizar {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 10px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 25px;
+  padding: 15px 45px;
   display: block;
 }
 
@@ -377,7 +379,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion {
-  background-color: #232323;
+  background-color: #2a2a2a;
   padding: 30px;
 }
 
@@ -413,8 +415,8 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+  border: 3px solid linear-gradient(red, #ff6b00);
   width: 60%;
-  border: 3px solid #ff4500;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -458,11 +460,11 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
+  border: 1px solid linear-gradient(red, #ff6b00);
   color: #fff;
   height: 65px;
   width: 65px;
-  background-color: #ff4500;
-  border: 1px solid #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border-radius: 100%;
   margin-top: 20px;
   margin-left: auto;
@@ -472,7 +474,7 @@ main {
 
 .main-creacion-rutina .main-creacion-rutina__boton-finalizar {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border-radius: 10px;
   margin-top: 20px;
   margin-left: auto;
@@ -489,7 +491,7 @@ main {
 
 .main-visualizacion-rutina .main-visualizacion-rutina__datos {
   color: #fff;
-  background-color: #232323;
+  background-color: #2a2a2a;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
@@ -511,7 +513,9 @@ main {
 }
 
 .main-visualizacion-rutina .main-visualizacion-rutina__datos .datos__ejercicio h2 {
-  color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
+  -webkit-background-clip: text;
+  color: #0000;
 }
 
 .main-visualizacion-rutina .main-visualizacion-rutina__datos .datos__ejercicio div {
@@ -557,14 +561,14 @@ main {
 
 .main-progreso .main-progreso__add-progreso form fieldset input {
   height: 20px;
+  border: 2px solid linear-gradient(red, #ff6b00);
   background-color: #232323;
-  border: 2px solid #ff4500;
   border-radius: 5px;
 }
 
 .main-progreso .main-progreso__add-progreso form fieldset button {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 5px;
   padding: 6px 20px;
@@ -581,7 +585,7 @@ main {
 }
 
 .main-progreso .main-progreso__ver-progreso .ver-progreso__contenedores .contenedores__contenedor {
-  background-color: #232323;
+  background-color: #2a2a2a;
   border: 3px solid #ff4500;
   border-radius: 10px;
   flex-direction: column;
@@ -606,7 +610,7 @@ main {
 .main-control-usuario .main-control-usuario__crear-cuenta {
   width: 48%;
   height: 350px;
-  background-color: #232323;
+  background-color: #2a2a2a;
   border-radius: 10px;
   padding: 25px;
 }
@@ -645,7 +649,7 @@ main {
 
 .main-control-usuario .main-control-usuario__crear-cuenta button {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
   margin-top: 20px;
@@ -658,7 +662,7 @@ main {
 .main-control-usuario .main-control-usuario__iniciar-sesion {
   width: 48%;
   height: 350px;
-  background-color: #232323;
+  background-color: #2a2a2a;
   border-radius: 10px;
   padding: 25px;
 }
@@ -690,7 +694,7 @@ main {
 
 .main-control-usuario .main-control-usuario__iniciar-sesion button {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
   margin-top: 20px;
@@ -708,7 +712,7 @@ main {
 
 .main-cuenta .main-cuenta__datos {
   color: #fff;
-  background-color: #232323;
+  background-color: #2a2a2a;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
@@ -733,7 +737,7 @@ main {
 
 .main-cuenta .main-cuenta__datos button {
   color: #fff;
-  background-color: #ff4500;
+  background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
   padding: 20px;
