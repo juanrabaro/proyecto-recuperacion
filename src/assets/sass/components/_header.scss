@@ -23,12 +23,14 @@ header {
                     -webkit-background-clip: text;
                     color: transparent;
                     font-family: 'Montserrat', sans-serif;
+                    font-size: 30px;
                 }
                 .titulo__titulo {
                     background: $degradado;
                     -webkit-background-clip: text;
                     color: transparent;
                     font-family: 'Montserrat', sans-serif;
+                    font-size: 30px;
                 }
             }
         }
@@ -48,6 +50,7 @@ header {
                     a {
                         text-decoration: none;
                         color: white;
+                        font-size: large;
                     }
                     .enlaces__resaltado-home {
                         background: $degradado;
