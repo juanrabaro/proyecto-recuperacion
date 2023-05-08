@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -56,10 +58,11 @@ header .navegador .navegador__enlace-titulo .enlace-titulo__titulo {
   display: flex;
 }
 
-header .navegador .navegador__enlace-titulo .enlace-titulo__titulo h1 {
+header .navegador .navegador__enlace-titulo .enlace-titulo__titulo .titulo__barras, header .navegador .navegador__enlace-titulo .enlace-titulo__titulo .titulo__titulo {
   background: linear-gradient(red, #ff6b00);
   -webkit-background-clip: text;
   color: #0000;
+  font-family: Montserrat, sans-serif;
 }
 
 header .navegador .navegador__enlaces {
