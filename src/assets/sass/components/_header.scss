@@ -39,7 +39,16 @@ header {
             flex-wrap: wrap;
             width: 280px;
 
-            ul {
+            .enlaces__img-menu {
+                display: none;
+            }
+            .enlaces__input {
+                display: none;
+            }
+            .enlaces__input:checked + .enlaces__ul {
+                background-color: blue;
+            }
+            .enlaces__ul {
                 list-style: none;
                 display: flex;
                 flex-direction: row;
@@ -59,6 +68,16 @@ header {
                     }
                 }
             }
+        }
+    }
+}
+
+@media and (max-width: 1000px) {
+    .navegador__enlaces {
+        background-color: red;
+        
+        label .enlaces__img-menu {
+            display: block;
         }
     }
 }

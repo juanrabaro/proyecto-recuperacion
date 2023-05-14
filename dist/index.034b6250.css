@@ -72,7 +72,15 @@ header .navegador .navegador__enlaces {
   display: flex;
 }
 
-header .navegador .navegador__enlaces ul {
+header .navegador .navegador__enlaces .enlaces__img-menu, header .navegador .navegador__enlaces .enlaces__input {
+  display: none;
+}
+
+header .navegador .navegador__enlaces .enlaces__input:checked + .enlaces__ul {
+  background-color: #00f;
+}
+
+header .navegador .navegador__enlaces .enlaces__ul {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
@@ -80,16 +88,26 @@ header .navegador .navegador__enlaces ul {
   display: flex;
 }
 
-header .navegador .navegador__enlaces ul li a {
+header .navegador .navegador__enlaces .enlaces__ul li a {
   color: #fff;
   font-size: large;
   text-decoration: none;
 }
 
-header .navegador .navegador__enlaces ul li .enlaces__resaltado-home {
+header .navegador .navegador__enlaces .enlaces__ul li .enlaces__resaltado-home {
   background: linear-gradient(red, #ff6b00);
   -webkit-background-clip: text;
   color: #0000;
+}
+
+@media (max-width: 1000px) {
+  .navegador__enlaces {
+    background-color: red;
+  }
+
+  .navegador__enlaces label .enlaces__img-menu {
+    display: block;
+  }
 }
 
 main {
