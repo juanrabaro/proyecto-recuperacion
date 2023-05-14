@@ -68,7 +68,9 @@ header .navegador .navegador__enlace-titulo .enlace-titulo__titulo .titulo__barr
 
 header .navegador .navegador__enlaces {
   width: 280px;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
@@ -77,7 +79,11 @@ header .navegador .navegador__enlaces .enlaces__img-menu, header .navegador .nav
 }
 
 header .navegador .navegador__enlaces .enlaces__input:checked + .enlaces__ul {
-  background-color: #00f;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
 }
 
 header .navegador .navegador__enlaces .enlaces__ul {
@@ -100,13 +106,22 @@ header .navegador .navegador__enlaces .enlaces__ul li .enlaces__resaltado-home {
   color: #0000;
 }
 
-@media (max-width: 1000px) {
-  .navegador__enlaces {
-    background-color: red;
+@media screen and (max-width: 800px) {
+  header .navegador .navegador__enlaces {
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
   }
 
-  .navegador__enlaces label .enlaces__img-menu {
+  header .navegador .navegador__enlaces .enlaces__img-menu {
+    width: 50px;
     display: block;
+  }
+
+  header .navegador .navegador__enlaces .enlaces__ul {
+    display: none;
   }
 }
 
