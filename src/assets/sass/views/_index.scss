@@ -28,25 +28,31 @@ main {
     .main-index__recuadro1 {
         display: flex;
         justify-content: space-between;
-    
+        position: relative;
+        height: 150px;
+        
         .recuadro1__texto-izquierda {
-            clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+            position: absolute;
+            z-index: 2;
+            clip-path: polygon(0 0, 100% 0, 66.7% 100%, 0% 100%);
             background: $degradado;
-            width: 50%;
-            text-align: center;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            @include flex(row, center, center);
+            width: 60%;
+            height: 100%;
+            padding-left: 6%;
+            @include flex(row, flex-start, center);
         }
         .recuadro1__texto-derecha {
+            position: absolute;
+            z-index: 1;
             background-color: $main;
-            width: 50%;
+            left: 40%;
+            padding-left: 18%;
+            height: 100%;
             text-align: center;
             padding-bottom: 30px;
             padding-top: 30px;
             color: white;
             @include flex(row, center, center);
-            padding-left: 50px;
             padding-right: 50px;
         }
     }
@@ -54,25 +60,33 @@ main {
     .main-index__recuadro2 {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        height: 150px;
         
-        .recuadro2__texto-derecha {
-            background: $degradado;
-            width: 50%;
-            text-align: center;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            @include flex(row, center, center);
-        }
         .recuadro2__texto-izquierda {
+            position: absolute;
+            z-index: 1;
             background-color: $main;
-            width: 50%;
+            padding-right: 18%;
+            height: 100%;
             text-align: center;
             padding-bottom: 30px;
+            right: 40%;
             padding-top: 30px;
             color: white;
-            padding-left: 50px;
-            padding-right: 50px;
             @include flex(row, center, center);
+            padding-left: 50px;
+        }
+        .recuadro2__texto-derecha {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 33.3% 100%);
+            position: absolute;
+            z-index: 2;
+            background: $degradado;
+            width: 60%;
+            height: 100%;
+            right: 0;
+            padding-right: 6%;
+            @include flex(row, flex-end, center);
         }
     }
 }
