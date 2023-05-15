@@ -80,9 +80,18 @@ header {
     }
     header .navegador .navegador__enlaces .enlaces__img-menu {
         display: block;
-        width: 50px;
+        width: 40px;      
     }
     header .navegador .navegador__enlaces .enlaces__ul {
         display: none;
+        position: absolute;
+        margin-top: 50px;
+        padding-bottom: 30px;
+        left: 0;
+        background-color: $resaltado;
+
+        li {
+            margin-top: 8px;
+        }
     }
 }
