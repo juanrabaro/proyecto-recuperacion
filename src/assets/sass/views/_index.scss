@@ -2,62 +2,77 @@ main {
     width: 100%;
 }
 
-.imagen-principal {
-    height: 400px;
+.main-index {
+    background-color: #1E1824;
 
-    img {
-        width: 100%;
-        height: 100%;
+    .main-index__imagen-principal {
+        position: relative;
+
+        h1 {
+            color: white;
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            text-align: center;
+            font-size: 3rem;
+        }
+        img {
+            width: 70%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+        }
     }
-}
-
-.recuadro1 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0px;
-
-    .recuadro1__texto-derecha {
-        background-color: $main;
-        width: 50%;
-        text-align: center;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        color: white;
-        @include flex(row, center, center);
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .recuadro1__texto-izquierda {
-        background: $degradado;
-        width: 50%;
-        text-align: center;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        @include flex(row, center, center);
-    }
-}
-
-.recuadro2 {
-    display: flex;
-    justify-content: space-between;
     
-    .recuadro2__texto-derecha {
-        background: $degradado;
-        width: 50%;
-        text-align: center;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        @include flex(row, center, center);
+    .main-index__recuadro1 {
+        display: flex;
+        justify-content: space-between;
+    
+        .recuadro1__texto-izquierda {
+            clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+            background: $degradado;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            @include flex(row, center, center);
+        }
+        .recuadro1__texto-derecha {
+            background-color: $main;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            color: white;
+            @include flex(row, center, center);
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
-    .recuadro2__texto-izquierda {
-        background-color: $main;
-        width: 50%;
-        text-align: center;
-        padding-bottom: 30px;
-        padding-top: 30px;
-        color: white;
-        padding-left: 50px;
-        padding-right: 50px;
-        @include flex(row, center, center);
+    
+    .main-index__recuadro2 {
+        display: flex;
+        justify-content: space-between;
+        
+        .recuadro2__texto-derecha {
+            background: $degradado;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            @include flex(row, center, center);
+        }
+        .recuadro2__texto-izquierda {
+            background-color: $main;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            color: white;
+            padding-left: 50px;
+            padding-right: 50px;
+            @include flex(row, center, center);
+        }
     }
 }
