@@ -1,10 +1,10 @@
 header {
     width: 100%;
     background-color: $resaltado;
-    padding-left: 7%;
-    padding-right: 7%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     .navegador {
         @include flex(row, space-between, center);
@@ -23,20 +23,20 @@ header {
                     -webkit-background-clip: text;
                     color: transparent;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 30px;
+                    font-size: 35px;
                 }
                 .titulo__titulo {
                     background: $degradado;
                     -webkit-background-clip: text;
                     color: transparent;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 30px;
+                    font-size: 35px;
                 }
             }
         }
         .navegador__enlaces {
             @include flex(row, space-between, center);
-            width: 280px;
+            width: 300px;
 
             .enlaces__img-menu {
                 display: none;
@@ -58,8 +58,8 @@ header {
                 li {
                     a {
                         text-decoration: none;
-                        color: white;
-                        font-size: large;
+                        color: $blanco;
+                        font-size: 20px;
                     }
                     .enlaces__resaltado-home {
                         background: $degradado;
@@ -72,9 +72,8 @@ header {
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 650px){
     header .navegador .navegador__enlaces {
-        //justify-content: right;
         @include flex(column, space-between, flex-end);
         height: 80%;
     }
@@ -83,6 +82,7 @@ header {
         width: 40px;      
     }
     header .navegador .navegador__enlaces .enlaces__ul {
+        z-index: 1;
         display: none;
         position: absolute;
         margin-top: 50px;

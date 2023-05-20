@@ -1,5 +1,6 @@
 main {
     width: 100%;
+    font-size: 20px;
 }
 
 .main-index {
@@ -9,7 +10,7 @@ main {
         position: relative;
 
         h1 {
-            color: white;
+            color: $blanco;
             position: absolute;
             width: 100%;
             top: 40%;
@@ -29,7 +30,7 @@ main {
         display: flex;
         justify-content: space-between;
         position: relative;
-        height: 150px;
+        height: 200px;
         
         .recuadro1__texto-izquierda {
             position: absolute;
@@ -38,8 +39,20 @@ main {
             background: $degradado;
             width: 60%;
             height: 100%;
-            padding-left: 6%;
-            @include flex(row, flex-start, center);
+            @include flex(column, center, center);
+            padding-right: 10%;
+            gap: 15px;
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                background: $main;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-radius: 25px;
+            }
         }
         .recuadro1__texto-derecha {
             position: absolute;
@@ -51,7 +64,7 @@ main {
             text-align: center;
             padding-bottom: 30px;
             padding-top: 30px;
-            color: white;
+            color: $blanco;
             @include flex(row, center, center);
             padding-right: 50px;
         }
@@ -61,21 +74,21 @@ main {
         display: flex;
         justify-content: space-between;
         position: relative;
-        height: 150px;
+        height: 200px;
         
         .recuadro2__texto-izquierda {
             position: absolute;
             z-index: 1;
             background-color: $main;
             padding-right: 18%;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            padding-left: 50px;
             height: 100%;
             text-align: center;
-            padding-bottom: 30px;
             right: 40%;
-            padding-top: 30px;
-            color: white;
+            color: $blanco;
             @include flex(row, center, center);
-            padding-left: 50px;
         }
         .recuadro2__texto-derecha {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 33.3% 100%);
@@ -85,8 +98,90 @@ main {
             width: 60%;
             height: 100%;
             right: 0;
-            padding-right: 6%;
-            @include flex(row, flex-end, center);
+            padding-left: 10%;
+            @include flex(column, center, center);
+            gap: 15px;
+
+            a {
+                text-decoration: none;
+                color: $blanco;
+                background: $main;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 25px;
+                padding-right: 25px;
+                border-radius: 25px;
+            }
         }
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    main {
+        font-size: 18px;
+    }
+    
+    .main-index .main-index__imagen-principal h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-index .main-index__recuadro1 .recuadro1__texto-izquierda {
+        padding-right: 8%;
+    }
+    .main-index .main-index__recuadro1 .recuadro1__texto-izquierda p {
+        width: 70%;
+        text-align: center;
+    }
+    .main-index .main-index__recuadro1 .recuadro1__texto-izquierda a {
+        width: 70%;
+        text-align: center;
+    }
+
+    .main-index .main-index__recuadro2 .recuadro2__texto-derecha {
+        padding-left: 12%;
+    }
+    .main-index .main-index__recuadro2 .recuadro2__texto-derecha p {
+        width: 80%;
+        text-align: center;
+    }
+    .main-index .main-index__recuadro2 .recuadro2__texto-derecha a {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-index .main-index__imagen-principal h1 {
+        font-size: 1rem;
+    }
+    .main-index .main-index__recuadro2 .recuadro2__texto-derecha a {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main-index .main-index__recuadro1 {
+        height: 250px;
+    }
+    .main-index .main-index__recuadro2 {
+        height: 250px;
+    }
+    .main-index .main-index__recuadro1 .recuadro1__texto-derecha {    
+        padding-right: 20px;
+    }
+    .main-index .main-index__recuadro2 .recuadro2__texto-izquierda {    
+        padding-left: 20px;
+    }
+    .main-index .main-index__recuadro1 .recuadro1__texto-izquierda {    
+        padding-right: 15%;
+    }
+    .main-index .main-index__recuadro2 .recuadro2__texto-derecha {    
+        padding-left: 15%;
     }
 }

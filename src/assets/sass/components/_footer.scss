@@ -2,18 +2,15 @@ footer {
     width: 100%;
     background-color: $resaltado;
     padding: 50px;
+    font-size: 18px;
 
     .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center, center);
 
         .footer__ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
+            @include flex(column, center, center);
+            gap: 6px;
+
             li {
                 list-style: none;
 
