@@ -5,19 +5,21 @@
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: $main;
-    color: white;
+    color: $blanco;
     @include flex(row, space-between, center);
 
     .main-control-usuario__crear-cuenta {
         width: 48%;
-        height: 350px;
+        height: 380px;
         background-color: $resaltado;
         padding: 25px;
         border-radius: 10px;
+        box-shadow: $sombra;
 
         h1 {
             text-align: center;
             margin-bottom: 25px;
+            font-size: 35px;
         }
         form {
             @include flex(column, left, center);
@@ -26,61 +28,180 @@
             gap: 8px;
             height: 150px;
 
-            .terminos {
-                @include flex(row, space-around, center);
-            }
             fieldset {
                 border: 0px;
                 width: 100%;
                 @include flex(row, space-between, center);
+                
+                input {
+                    background-color: $masResaltado;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    border-radius: 6px;
+                    height: 30px;
+                    box-shadow: $sombra;
+                }
+            }
+            .terminos {
+                @include flex(row, center, center);
+
+                label {
+                    width: 200px;
+                    text-align: center;
+                }
             }
         }
         button {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
+            margin-top: 40px;
             padding: 12px;
             border: 0px;
             border-radius: 10px;
             background: $degradado;
-            color: white;
+            color: $blanco;
+            box-shadow: $sombra;
         }
     }
     .main-control-usuario__iniciar-sesion {
         width: 48%;
-        height: 350px;
+        height: 380px;
         background-color: $resaltado;
         padding: 25px;
         border-radius: 10px;
+        box-shadow: $sombra;
 
         h1 {
             text-align: center;
             margin-bottom: 25px;
+            font-size: 35px;
         }
         form {
             @include flex(column, left, center);
             margin-left: 50px;
             margin-right: 50px;
             gap: 8px;
-            height: 150px;
+            height: 100px;
 
             fieldset {
                 border: 0px;
                 width: 100%;
                 @include flex(row, space-between, center);
+                
+                input {
+                    background-color: $masResaltado;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    border-radius: 6px;
+                    height: 30px;
+                    box-shadow: $sombra;
+                }
             }
         }
         button {
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 20px;
+            margin-top: 0;
             padding: 12px;
             border: 0px;
             border-radius: 10px;
             background: $degradado;
-            color: white;
+            color: $blanco;
+            box-shadow: $sombra;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main-control-usuario {
+        @include flex(column, center, center);
+        gap: 20px;
+        
+        .main-control-usuario__crear-cuenta {
+            width: 100%;
+
+            form {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+        .main-control-usuario__iniciar-sesion {
+            width: 100%;
+            height: 280px;
+
+            form {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-control-usuario .main-control-usuario__crear-cuenta form {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .main-control-usuario .main-control-usuario__iniciar-sesion form {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-control-usuario .main-control-usuario__crear-cuenta form {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .main-control-usuario .main-control-usuario__iniciar-sesion form {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-control-usuario .main-control-usuario__crear-cuenta form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-control-usuario .main-control-usuario__iniciar-sesion form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-control-usuario .main-control-usuario__crear-cuenta form fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+        
+        .input-texto {
+            width: 100%;
+        }
+    }
+    
+    .main-control-usuario .main-control-usuario__crear-cuenta {
+        height: 400px;
+        
+        button {
+            margin-top: 100px;
+        }
+    }
+    .main-control-usuario .main-control-usuario__iniciar-sesion form fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+
+        input {
+            width: 100%;
+        }
+    }
+    .main-control-usuario .main-control-usuario__iniciar-sesion {
+        height: 300px;
+
+        button {
+            margin-top: 40px;
         }
     }
 }

@@ -846,7 +846,7 @@ main {
 
 .main-control-usuario {
   width: 100%;
-  color: #fff;
+  color: #d0d0d0;
   background-color: #1c1c1c;
   flex-direction: row;
   justify-content: space-between;
@@ -857,15 +857,17 @@ main {
 
 .main-control-usuario .main-control-usuario__crear-cuenta {
   width: 48%;
-  height: 350px;
+  height: 380px;
   background-color: #2a2a2a;
   border-radius: 10px;
   padding: 25px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-control-usuario .main-control-usuario__crear-cuenta h1 {
   text-align: center;
   margin-bottom: 25px;
+  font-size: 35px;
 }
 
 .main-control-usuario .main-control-usuario__crear-cuenta form {
@@ -879,13 +881,6 @@ main {
   display: flex;
 }
 
-.main-control-usuario .main-control-usuario__crear-cuenta form .terminos {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  display: flex;
-}
-
 .main-control-usuario .main-control-usuario__crear-cuenta form fieldset {
   width: 100%;
   border: 0;
@@ -895,33 +890,57 @@ main {
   display: flex;
 }
 
+.main-control-usuario .main-control-usuario__crear-cuenta form fieldset input {
+  height: 30px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
+  border-radius: 6px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
+}
+
+.main-control-usuario .main-control-usuario__crear-cuenta form .terminos {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main-control-usuario .main-control-usuario__crear-cuenta form .terminos label {
+  width: 200px;
+  text-align: center;
+}
+
 .main-control-usuario .main-control-usuario__crear-cuenta button {
-  color: #fff;
+  color: #d0d0d0;
   background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-control-usuario .main-control-usuario__iniciar-sesion {
   width: 48%;
-  height: 350px;
+  height: 380px;
   background-color: #2a2a2a;
   border-radius: 10px;
   padding: 25px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-control-usuario .main-control-usuario__iniciar-sesion h1 {
   text-align: center;
   margin-bottom: 25px;
+  font-size: 35px;
 }
 
 .main-control-usuario .main-control-usuario__iniciar-sesion form {
-  height: 150px;
+  height: 100px;
   flex-direction: column;
   justify-content: left;
   align-items: center;
@@ -940,16 +959,118 @@ main {
   display: flex;
 }
 
+.main-control-usuario .main-control-usuario__iniciar-sesion form fieldset input {
+  height: 30px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
+  border-radius: 6px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
+}
+
 .main-control-usuario .main-control-usuario__iniciar-sesion button {
-  color: #fff;
+  color: #d0d0d0;
   background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 0;
   margin-left: auto;
   margin-right: auto;
   padding: 12px;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
+}
+
+@media screen and (max-width: 1050px) {
+  .main-control-usuario {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+  }
+
+  .main-control-usuario .main-control-usuario__crear-cuenta {
+    width: 100%;
+  }
+
+  .main-control-usuario .main-control-usuario__crear-cuenta form {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion {
+    width: 100%;
+    height: 280px;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion form {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-control-usuario .main-control-usuario__crear-cuenta form, .main-control-usuario .main-control-usuario__iniciar-sesion form {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-control-usuario .main-control-usuario__crear-cuenta form, .main-control-usuario .main-control-usuario__iniciar-sesion form {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .main-control-usuario .main-control-usuario__crear-cuenta form, .main-control-usuario .main-control-usuario__iniciar-sesion form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-control-usuario .main-control-usuario__crear-cuenta form fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-control-usuario .main-control-usuario__crear-cuenta form fieldset .input-texto {
+    width: 100%;
+  }
+
+  .main-control-usuario .main-control-usuario__crear-cuenta {
+    height: 400px;
+  }
+
+  .main-control-usuario .main-control-usuario__crear-cuenta button {
+    margin-top: 100px;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion form fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion form fieldset input {
+    width: 100%;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion {
+    height: 300px;
+  }
+
+  .main-control-usuario .main-control-usuario__iniciar-sesion button {
+    margin-top: 40px;
+  }
 }
 
 .main-cuenta {
