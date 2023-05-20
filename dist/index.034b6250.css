@@ -1076,7 +1076,7 @@ main {
 .main-cuenta {
   width: 100%;
   background-color: #1c1c1c;
-  padding: 50px 200px 100px;
+  padding: 50px 20% 100px;
 }
 
 .main-cuenta .main-cuenta__datos {
@@ -1110,6 +1110,24 @@ main {
   border: 0;
   border-radius: 10px;
   padding: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .main-cuenta .main-cuenta__datos .datos__informacion div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-cuenta {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /*# sourceMappingURL=index.034b6250.css.map */
