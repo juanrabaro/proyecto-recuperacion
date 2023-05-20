@@ -1,44 +1,59 @@
-.main-creacion-rutina {
+.main-edicion-rutina {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 20%;
+    padding-right: 20%;
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: $main;
+    font-size: 20px;
 
-    .main-creacion-rutina__section-creacion {
+    .main-edicion-rutina__section-edicion {
         background-color: $resaltado;
-        padding: 30px;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-shadow: $sombra;
+        border-radius: 10px;
         
         h1 {
             text-align: center;
-            color: white;
+            color: $blanco;
+            font-size: 40px;
         }
-        .section-creacion__formulario1 {
+        .section-edicion__formulario {
             padding-top: 20px;
             padding-bottom: 20px;
-            padding-left: 150px;
-            padding-right: 150px;
-
+            padding-left: 15%;
+            padding-right: 15%;
+            
             fieldset {
                 @include flex(row, space-between, center);
                 border: 0px;
                 padding-bottom: 5px;
 
                 label {
-                    color: white;
+                    color: $blanco;
                 }
                 input {
+                    height: 25px;
                     border-radius: 5px;
                     width: 75%;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    background-color: $masResaltado;
                 }
                 .input2 {
                     height: 50px;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    background-color: $masResaltado;
                 }
             }
         }
-        .section-creacion__nuevo-ejercicio {
-            border: 3px solid $degradado;
+        .section-edicion__nuevo-ejercicio {
+            border: 3px solid $naranjaDegradado;
+            box-shadow: $sombra;
             border-radius: 10px;
             width: 60%;
             display: block;
@@ -47,57 +62,119 @@
 
             .nuevo-ejercicio__titulo {
                 @include flex(row, center, center);
-                color: white;
+                color: $blanco;
                 gap: 10px;
                 padding-top: 10px;
             }
-            .section-creacion__formulario-creacion-ejercicio {
+            .section-edicion__formulario-edicion-ejercicio {
                 padding-top: 20px;
                 padding-bottom: 20px;
                 padding-left: 20px;
                 padding-right: 20px;
+
                 fieldset {
                     @include flex(row, space-between, center);
                     border: 0px;
                     padding-bottom: 5px;
 
                     label {
-                        color: white;
+                        color: $blanco;
                     }
                     input {
+                        height: 25px;
                         border-radius: 5px;
                         width: 200px;
+                        border: 0;
+                        border-bottom: 3px solid $naranjaDegradado;
+                        background-color: $masResaltado;
                     }
                     .input2 {
                         height: 50px;
+                        border: 0;
+                        border-bottom: 3px solid $naranjaDegradado;
+                        background-color: $masResaltado;
                     }
                 }   
             }
         }
-        .section-creacion__boton {
+        .section-edicion__boton {
             background: $degradado;
-            border: 1px solid $degradado;
+            border: 0;
             border-radius: 100%;
-            color: white;
+            color: $blanco;
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-top: 20px;
             height: 65px;
             width: 65px;
+            box-shadow: $sombra;
         }
     }
 
-    .main-creacion-rutina__boton-finalizar {
+    .main-edicion-rutina__boton-finalizar {
         display: block;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         padding: 15px;
-        padding-left: 25px;
-        padding-right: 25px;
+        padding-left: 45px;
+        padding-right: 45px;
         border-radius: 10px;
         background: $degradado;
-        color: white;
+        color: $blanco;
+        border: 0px;
+        box-shadow: $sombra;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+
+        input {
+            width: 100%;
+        }
+    }
+    .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-edicion-rutina {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .main-edicion-rutina__section-edicion {
+        padding-left: 2%;
+        padding-right: 2%;    
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main-edicion-rutina__section-edicion {
+        padding-left: 0;
+        padding-right: 0;    
+    }
+    .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario {
+        padding-left: 5%;
+        padding-right: 5%; 
+    }
+    .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio {
+        width: 100%;
+        font-size: 16px;
     }
 }

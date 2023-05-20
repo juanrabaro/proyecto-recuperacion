@@ -9,20 +9,24 @@
 
     .main-creacion-rutina__section-creacion {
         background-color: $resaltado;
-        padding: 30px;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 30px;
+        padding-bottom: 30px;
         box-shadow: $sombra;
         border-radius: 10px;
         
         h1 {
             text-align: center;
             color: $blanco;
-            font-size: 35px;
+            font-size: 40px;
         }
-        .section-creacion__formulario1 {
+        .section-creacion__formulario {
             padding-top: 20px;
             padding-bottom: 20px;
-            padding-left: 150px;
-            padding-right: 150px;
+            padding-left: 15%;
+            padding-right: 15%;
+            
             fieldset {
                 @include flex(row, space-between, center);
                 border: 0px;
@@ -32,16 +36,24 @@
                     color: $blanco;
                 }
                 input {
+                    height: 25px;
                     border-radius: 5px;
                     width: 75%;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    background-color: $masResaltado;
                 }
                 .input2 {
                     height: 50px;
+                    border: 0;
+                    border-bottom: 3px solid $naranjaDegradado;
+                    background-color: $masResaltado;
                 }
             }
         }
         .section-creacion__nuevo-ejercicio {
-            border: 3px solid $degradado;
+            border: 3px solid $naranjaDegradado;
+            box-shadow: $sombra;
             border-radius: 10px;
             width: 60%;
             display: block;
@@ -69,18 +81,25 @@
                         color: $blanco;
                     }
                     input {
+                        height: 25px;
                         border-radius: 5px;
                         width: 200px;
+                        border: 0;
+                        border-bottom: 3px solid $naranjaDegradado;
+                        background-color: $masResaltado;
                     }
                     .input2 {
                         height: 50px;
+                        border: 0;
+                        border-bottom: 3px solid $naranjaDegradado;
+                        background-color: $masResaltado;
                     }
                 }   
             }
         }
         .section-creacion__boton {
             background: $degradado;
-            border: 1px solid $degradado;
+            border: 0;
             border-radius: 100%;
             color: $blanco;
             display: block;
@@ -89,6 +108,7 @@
             margin-top: 20px;
             height: 65px;
             width: 65px;
+            box-shadow: $sombra;
         }
     }
 
@@ -104,9 +124,57 @@
         background: $degradado;
         color: $blanco;
         border: 0px;
+        box-shadow: $sombra;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 1350px) {
+    .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
 
+        input {
+            width: 100%;
+        }
+    }
+    .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+
+        input {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-creacion-rutina {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .main-creacion-rutina__section-creacion {
+        padding-left: 2%;
+        padding-right: 2%;    
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main-creacion-rutina__section-creacion {
+        padding-left: 0;
+        padding-right: 0;    
+    }
+    .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario {
+        padding-left: 5%;
+        padding-right: 5%; 
+    }
+    .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+        width: 100%;
+        font-size: 16px;
+    }
 }

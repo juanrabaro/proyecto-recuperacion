@@ -483,21 +483,21 @@ main {
 .main-creacion-rutina .main-creacion-rutina__section-creacion {
   background-color: #2a2a2a;
   border-radius: 10px;
-  padding: 30px;
+  padding: 30px 5%;
   box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion h1 {
   text-align: center;
   color: #d0d0d0;
-  font-size: 35px;
+  font-size: 40px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 {
-  padding: 20px 150px;
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario {
+  padding: 20px 15%;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset {
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset {
   border: 0;
   flex-direction: row;
   justify-content: space-between;
@@ -506,26 +506,34 @@ main {
   display: flex;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset label {
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset label {
   color: #d0d0d0;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset input {
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset input {
+  height: 25px;
   width: 75%;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
   border-radius: 5px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset .input2 {
+.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset .input2 {
   height: 50px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
-  border: 3px solid linear-gradient(red, #ff6b00);
   width: 60%;
+  border: 3px solid #ff6b00;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .nuevo-ejercicio__titulo {
@@ -556,25 +564,33 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
+  height: 25px;
   width: 200px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
   border-radius: 5px;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset .input2 {
   height: 50px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
-  border: 1px solid linear-gradient(red, #ff6b00);
   color: #d0d0d0;
   height: 65px;
   width: 65px;
   background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 100%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-creacion-rutina .main-creacion-rutina__boton-finalizar {
@@ -587,29 +603,95 @@ main {
   margin-right: auto;
   padding: 15px 45px;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
-.main-creacion-rutina {
+@media screen and (max-width: 1350px) {
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario fieldset input {
+    width: 100%;
+  }
+
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-creacion-rutina {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main-creacion-rutina__section-creacion {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .main-creacion-rutina__section-creacion {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.main-edicion-rutina {
   width: 100%;
   background-color: #1c1c1c;
-  padding: 50px 200px 100px;
+  padding: 50px 20% 100px;
+  font-size: 20px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion {
+.main-edicion-rutina .main-edicion-rutina__section-edicion {
   background-color: #2a2a2a;
-  padding: 30px;
+  border-radius: 10px;
+  padding: 30px 5%;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion h1 {
+.main-edicion-rutina .main-edicion-rutina__section-edicion h1 {
   text-align: center;
-  color: #fff;
+  color: #d0d0d0;
+  font-size: 40px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 {
-  padding: 20px 150px;
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario {
+  padding: 20px 15%;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset {
   border: 0;
   flex-direction: row;
   justify-content: space-between;
@@ -618,30 +700,38 @@ main {
   display: flex;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset label {
-  color: #fff;
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset label {
+  color: #d0d0d0;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset input {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset input {
+  height: 25px;
   width: 75%;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
   border-radius: 5px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset .input2 {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset .input2 {
   height: 50px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio {
-  border: 3px solid linear-gradient(red, #ff6b00);
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio {
   width: 60%;
+  border: 3px solid #ff6b00;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .nuevo-ejercicio__titulo {
-  color: #fff;
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .nuevo-ejercicio__titulo {
+  color: #d0d0d0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -650,11 +740,11 @@ main {
   display: flex;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio {
   padding: 20px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset {
   border: 0;
   flex-direction: row;
   justify-content: space-between;
@@ -663,41 +753,112 @@ main {
   display: flex;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset label {
-  color: #fff;
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset label {
+  color: #d0d0d0;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset input {
+  height: 25px;
   width: 200px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
   border-radius: 5px;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset .input2 {
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset .input2 {
   height: 50px;
+  background-color: #313131;
+  border: 0;
+  border-bottom: 3px solid #ff6b00;
 }
 
-.main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
-  border: 1px solid linear-gradient(red, #ff6b00);
-  color: #fff;
+.main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__boton {
+  color: #d0d0d0;
   height: 65px;
   width: 65px;
   background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 100%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
-.main-creacion-rutina .main-creacion-rutina__boton-finalizar {
-  color: #fff;
+.main-edicion-rutina .main-edicion-rutina__boton-finalizar {
+  color: #d0d0d0;
   background: linear-gradient(red, #ff6b00);
+  border: 0;
   border-radius: 10px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px 25px;
+  padding: 15px 45px;
   display: block;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
+}
+
+@media screen and (max-width: 1350px) {
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario fieldset input {
+    width: 100%;
+  }
+
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+  }
+
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio .section-edicion__formulario-edicion-ejercicio fieldset input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-edicion-rutina {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main-edicion-rutina__section-edicion {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .main-edicion-rutina__section-edicion {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__formulario {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-edicion-rutina .main-edicion-rutina__section-edicion .section-edicion__nuevo-ejercicio {
+    width: 100%;
+    font-size: 16px;
+  }
 }
 
 .main-visualizacion-rutina {
