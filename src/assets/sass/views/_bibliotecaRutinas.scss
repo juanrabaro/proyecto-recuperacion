@@ -1,95 +1,132 @@
 .main-biblioteca {
     width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 100px;
     background-color: $main;
-}
-
-.main-biblioteca__nuevo-y-buscador {
-    @include flex(row, space-between, center);
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    .nuevo-y-buscador__botones {
-        @include flex(row, center, center);
-        gap: 20px;
-
-        button {
-            background: $degradado;
-            color: white;
-            padding: 10px;
-            border-radius: 5px;
-            width: 160px;
-            border: 0px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-    }
+    font-size: 20px;
     
-    .nuevo-y-buscador__buscador {
-        @include flex(row, center, center);
-        gap: 20px;
-        color: white;
-
-        img {
-            width: 30px;
+    .main-biblioteca__nuevo-y-buscador {
+        @include flex(row, space-between, center);
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+        .nuevo-y-buscador__botones {
+            @include flex(row, center, center);
+            gap: 20px;
+    
+            button {
+                background: $degradado;
+                font-size: 18px;
+                color: $blanco;
+                padding: 10px;
+                border-radius: 5px;
+                width: 160px;
+                border: 0px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
         }
-        input {
-            background: $degradado;
-            padding: 5px;
-            border-radius: 5px;
-            width: 160px;
-            border: 0px;
-            color: white;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+        .nuevo-y-buscador__buscador {
+            @include flex(row, center, center);
+            gap: 20px;
+            color: $blanco;
+    
+            img {
+                width: 30px;
+            }
+            input {
+                background: $resaltado;
+                border: 0;
+                border-bottom: 4px solid rgb(255, 107, 0);
+                padding: 5px;
+                border-radius: 5px;
+                width: 160px;
+                color: $blanco;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
         }
     }
-}
-
-.carpetas-y-rutinas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 350px;
-    row-gap: 20px;
-    column-gap: 20px;
-    text-decoration: none;
-
-    .carpetas-y-rutinas__elemeto {
-        background: $resaltado;
-        border-radius: 5px;
-        color: white;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-        .elemento__titulos {
-            @include flex(row, space-between, center);
-            padding-left: 20px;
-            padding-right: 15px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background: $degradado;
+        
+    .main-biblioteca__carpetas-y-rutinas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        min-height: 350px;
+        row-gap: 20px;
+        column-gap: 20px;
+        text-decoration: none;
+    
+        .carpetas-y-rutinas__elemeto {
+            background: $resaltado;
             border-radius: 5px;
+            color: $blanco;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            
+            .elemento__titulos {
+                @include flex(row, space-between, center);
+                padding-left: 20px;
+                padding-right: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background: $degradado;
+                border-radius: 5px;
 
-            img {
-                width: 40px;
-            }
-            .titulos__titulo {
-                text-decoration: none;
-                color: white;
-            }
-            .titulos__iconos {
-                a {
-                    img {
-                        width: 30px;
+                img {
+                    width: 40px;
+                }
+                .titulos__titulo {
+                    text-decoration: none;
+                    color: white;
+                }
+                .titulos__iconos {
+                    a {
+                        img {
+                            width: 30px;
+                        }
                     }
                 }
             }
+            .elemento__descripcion {
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                height: 80%;
+            }
         }
-        .elemento__descripcion {
-            padding-left: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            height: 80%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .main-biblioteca .main-biblioteca__nuevo-y-buscador {
+        @include flex(column, center, center);
+        gap: 20px;
+
+        .nuevo-y-buscador__botones {
+            @include flex(column, center, center);
+            gap: 20px;
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
         }
+        .nuevo-y-buscador__buscador {
+            width: 100%;
+            @include flex(row, space-between, center);
+        } 
+    }
+    .main-biblioteca .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador input {
+        width: 200px;
+        height: 42.4px;
+    }
+    .main-biblioteca .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador input {
+        width: 90%;
+    }
+
+    .main-biblioteca .main-biblioteca__carpetas-y-rutinas {
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
     }
 }
