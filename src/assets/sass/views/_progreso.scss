@@ -5,7 +5,8 @@
     padding-bottom: 100px;
     padding-top: 50px;
     background-color: $main;
-    color: white;
+    color: $blanco;
+    font-size: 20px;
 
     .main-progreso__add-progreso {
         @include flex(column, center, center);
@@ -13,6 +14,8 @@
 
         h1 {
             margin-bottom: 20px;
+            font-size: 38px;
+            text-align: center;
         }
         p {
             width: 80%;
@@ -27,18 +30,26 @@
 
                 input {
                     border-radius: 5px;
+                    border: 0;
+                    border-bottom: 4px solid rgb(255, 107, 0);
                     height: 20px;
-                    background-color: rgb(35, 35, 35);
-                    border: 2px solid $degradado;
+                    background-color: $resaltado;
+                    height: 35px;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    margin-right: 8px;
+                    margin-left: 8px;
                 }
                 button {
-                    color: white;
+                    color: $blanco;
                     background: $degradado;
                     padding: 6px;
                     padding-left: 20px;
                     padding-right: 20px;
                     border-radius: 5px;
                     border: 0px;
+                    width: 150px;
+                    height: 35px;
+                    font-size: 16px;
                 }
             }
         }
@@ -46,6 +57,7 @@
     .main-progreso__ver-progreso {
         h2 {
             margin-bottom: 10px;
+            font-size: 35px;
         }
         .ver-progreso__contenedores {
             display: grid;
@@ -66,6 +78,28 @@
 
 
 
-@media screen and (max-width: 720px) {
-    
+@media screen and (max-width: 750px) {
+    .main-progreso .main-progreso__ver-progreso .ver-progreso__contenedores {
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main-progreso .main-progreso__add-progreso form fieldset {
+        @include flex(column, center, center);
+        gap: 5px;
+        margin-bottom: 20px;
+
+        input {
+            width: 90%;
+        }
+        button {
+            width: 90%;
+        }
+    }
+
+    .main-progreso .main-progreso__ver-progreso .ver-progreso__contenedores {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
 }
