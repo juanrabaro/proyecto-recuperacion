@@ -9,10 +9,11 @@
     .main-cuenta__datos {
         background-color: $resaltado;
         padding: 30px;
-        color: white;
+        color: $blanco;
         border-radius: 20px;
         @include flex(column, center, center);
         gap: 40px;
+        box-shadow: $sombra;
 
         img {
             width: 200px;
@@ -29,7 +30,8 @@
             background: $degradado;
             border-radius: 10px;
             border: 0px;
-            color: white;
+            color: $blanco;
+            box-shadow: $sombra;
         }
     }
 }

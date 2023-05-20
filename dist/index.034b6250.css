@@ -347,7 +347,8 @@ main {
   display: flex;
 }
 
-.main-biblioteca .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__botones button {
+.main-biblioteca .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__botones a {
+  text-align: center;
   color: #d0d0d0;
   width: 160px;
   background: linear-gradient(red, #ff6b00);
@@ -355,6 +356,7 @@ main {
   border-radius: 5px;
   padding: 10px;
   font-size: 18px;
+  text-decoration: none;
   box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
@@ -373,6 +375,7 @@ main {
 
 .main-biblioteca .main-biblioteca__nuevo-y-buscador .nuevo-y-buscador__buscador input {
   width: 160px;
+  height: 35px;
   color: #d0d0d0;
   background: #2a2a2a;
   border: 0;
@@ -473,17 +476,21 @@ main {
 .main-creacion-rutina {
   width: 100%;
   background-color: #1c1c1c;
-  padding: 50px 200px 100px;
+  padding: 50px 20% 100px;
+  font-size: 20px;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion {
   background-color: #2a2a2a;
+  border-radius: 10px;
   padding: 30px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion h1 {
   text-align: center;
-  color: #fff;
+  color: #d0d0d0;
+  font-size: 35px;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 {
@@ -500,7 +507,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset label {
-  color: #fff;
+  color: #d0d0d0;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__formulario1 fieldset input {
@@ -522,7 +529,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .nuevo-ejercicio__titulo {
-  color: #fff;
+  color: #d0d0d0;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -545,7 +552,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset label {
-  color: #fff;
+  color: #d0d0d0;
 }
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__nuevo-ejercicio .section-creacion__formulario-creacion-ejercicio fieldset input {
@@ -559,7 +566,7 @@ main {
 
 .main-creacion-rutina .main-creacion-rutina__section-creacion .section-creacion__boton {
   border: 1px solid linear-gradient(red, #ff6b00);
-  color: #fff;
+  color: #d0d0d0;
   height: 65px;
   width: 65px;
   background: linear-gradient(red, #ff6b00);
@@ -571,7 +578,7 @@ main {
 }
 
 .main-creacion-rutina .main-creacion-rutina__boton-finalizar {
-  color: #fff;
+  color: #d0d0d0;
   background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
@@ -1080,7 +1087,7 @@ main {
 }
 
 .main-cuenta .main-cuenta__datos {
-  color: #fff;
+  color: #d0d0d0;
   background-color: #2a2a2a;
   border-radius: 20px;
   flex-direction: column;
@@ -1089,6 +1096,7 @@ main {
   gap: 40px;
   padding: 30px;
   display: flex;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 .main-cuenta .main-cuenta__datos img {
@@ -1105,11 +1113,12 @@ main {
 }
 
 .main-cuenta .main-cuenta__datos button {
-  color: #fff;
+  color: #d0d0d0;
   background: linear-gradient(red, #ff6b00);
   border: 0;
   border-radius: 10px;
   padding: 20px;
+  box-shadow: 0 54px 55px #00000040, 0 -12px 30px #0000001f, 0 4px 6px #0000001f, 0 12px 13px #0000002b, 0 -3px 5px #00000017;
 }
 
 @media screen and (max-width: 820px) {
