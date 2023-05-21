@@ -20,6 +20,7 @@
             text-align: center;
             color: $blanco;
             font-size: 40px;
+            font-family: $letraTitulo;
         }
         .section-creacion__formulario {
             padding-top: 20px;
@@ -31,6 +32,7 @@
                 @include flex(row, space-between, center);
                 border: 0px;
                 padding-bottom: 5px;
+                font-family: $letraNormal;
 
                 label {
                     color: $blanco;
@@ -42,6 +44,7 @@
                     border: 0;
                     border-bottom: 3px solid $naranjaDegradado;
                     background-color: $masResaltado;
+                    box-shadow: $sombra;
                 }
                 .input2 {
                     height: 50px;
@@ -76,6 +79,7 @@
                     @include flex(row, space-between, center);
                     border: 0px;
                     padding-bottom: 5px;
+                    font-family: $letraNormal;
 
                     label {
                         color: $blanco;
@@ -87,12 +91,14 @@
                         border: 0;
                         border-bottom: 3px solid $naranjaDegradado;
                         background-color: $masResaltado;
+                        box-shadow: $sombra;
                     }
                     .input2 {
                         height: 50px;
                         border: 0;
                         border-bottom: 3px solid $naranjaDegradado;
                         background-color: $masResaltado;
+                        box-shadow: $sombra;
                     }
                 }   
             }
@@ -125,6 +131,8 @@
         color: $blanco;
         border: 0px;
         box-shadow: $sombra;
+        font-size: 18px;
+        font-family: $letraTitulo;
     }
 }
 

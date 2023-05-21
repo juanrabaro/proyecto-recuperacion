@@ -20,6 +20,7 @@
             text-align: center;
             margin-bottom: 25px;
             font-size: 35px;
+            font-family: $letraTitulo;
         }
         form {
             @include flex(column, left, center);
@@ -32,6 +33,7 @@
                 border: 0px;
                 width: 100%;
                 @include flex(row, space-between, center);
+                font-family: $letraNormal;
                 
                 input {
                     background-color: $masResaltado;
@@ -44,7 +46,7 @@
             }
             .terminos {
                 @include flex(row, center, center);
-
+                
                 label {
                     width: 200px;
                     text-align: center;
@@ -62,6 +64,8 @@
             background: $degradado;
             color: $blanco;
             box-shadow: $sombra;
+            font-size: 18px;
+            font-family: $letraTitulo;
         }
     }
     .main-control-usuario__iniciar-sesion {
@@ -71,11 +75,12 @@
         padding: 25px;
         border-radius: 10px;
         box-shadow: $sombra;
-
+        
         h1 {
             text-align: center;
             margin-bottom: 25px;
             font-size: 35px;
+            font-family: $letraTitulo;
         }
         form {
             @include flex(column, left, center);
@@ -88,6 +93,7 @@
                 border: 0px;
                 width: 100%;
                 @include flex(row, space-between, center);
+                font-family: $letraNormal;
                 
                 input {
                     background-color: $masResaltado;
@@ -110,6 +116,8 @@
             background: $degradado;
             color: $blanco;
             box-shadow: $sombra;
+            font-size: 18px;
+            font-family: $letraTitulo;
         }
     }
 }

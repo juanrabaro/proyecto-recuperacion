@@ -16,13 +16,15 @@
             margin-bottom: 20px;
             font-size: 38px;
             text-align: center;
+            font-family: $letraTitulo;
         }
         p {
             width: 80%;
+            font-family: $letraNormal;
         }
         form {
             margin-top: 20px;
-
+            
             fieldset {
                 border: 0px;
                 text-align: right;
@@ -38,6 +40,7 @@
                     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                     margin-right: 8px;
                     margin-left: 8px;
+                    box-shadow: $sombra;
                 }
                 button {
                     color: $blanco;
@@ -50,6 +53,7 @@
                     width: 150px;
                     height: 35px;
                     font-size: 16px;
+                    box-shadow: $sombra;
                 }
             }
         }
@@ -58,12 +62,13 @@
         h2 {
             margin-bottom: 10px;
             font-size: 35px;
+            font-family: $letraTitulo;
         }
         .ver-progreso__contenedores {
             display: grid;
             grid-template-columns: auto auto auto auto;
             gap: 30px;
-
+            
             .contenedores__contenedor {
                 @include flex(column, center, center);
                 background-color: $resaltado;
@@ -71,6 +76,10 @@
                 border-radius: 10px;
                 padding-top: 15px;
                 padding-bottom: 15px;
+                
+                p {
+                    font-family: $letraNormal;
+                }
             }
         }
     }

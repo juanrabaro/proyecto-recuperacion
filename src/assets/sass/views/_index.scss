@@ -16,6 +16,7 @@ main {
             top: 40%;
             text-align: center;
             font-size: 3rem;
+            font-family: $letraTitulo;
         }
         img {
             width: 70%;
@@ -42,8 +43,11 @@ main {
             @include flex(column, center, center);
             padding-right: 10%;
             gap: 15px;
+            font-family: $letraNormal;
 
             a {
+                font-family: $letraTitulo;
+                box-shadow: $sombra;
                 text-decoration: none;
                 color: $blanco;
                 background: $main;
@@ -67,6 +71,7 @@ main {
             color: $blanco;
             @include flex(row, center, center);
             padding-right: 50px;
+            font-family: $letraNormal;
         }
     }
     
@@ -89,6 +94,7 @@ main {
             right: 40%;
             color: $blanco;
             @include flex(row, center, center);
+            font-family: $letraNormal;
         }
         .recuadro2__texto-derecha {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 33.3% 100%);
@@ -101,8 +107,11 @@ main {
             padding-left: 10%;
             @include flex(column, center, center);
             gap: 15px;
-
+            font-family: $letraNormal;
+            
             a {
+                font-family: $letraTitulo;
+                box-shadow: $sombra;
                 text-decoration: none;
                 color: $blanco;
                 background: $main;
