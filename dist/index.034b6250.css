@@ -106,7 +106,14 @@ header .navegador .navegador__enlaces .enlaces__ul li a {
   text-decoration: none;
 }
 
-header .navegador .navegador__enlaces .enlaces__ul li a:hover, header .navegador .navegador__enlaces .enlaces__ul li .enlaces__resaltado-home {
+header .navegador .navegador__enlaces .enlaces__ul li a:hover {
+  background: linear-gradient(red, #ff6b00);
+  -webkit-background-clip: text;
+  color: #0000;
+  transition: all .3s;
+}
+
+header .navegador .navegador__enlaces .enlaces__ul li .enlaces__resaltado-home {
   background: linear-gradient(red, #ff6b00);
   -webkit-background-clip: text;
   color: #0000;
@@ -208,6 +215,7 @@ main {
 
 .main-index .main-index__recuadro1 .recuadro1__texto-izquierda a:hover {
   background: linear-gradient(red, #ff6b00);
+  transition: all .3s;
 }
 
 .main-index .main-index__recuadro1 .recuadro1__texto-derecha {
@@ -278,6 +286,7 @@ main {
 
 .main-index .main-index__recuadro2 .recuadro2__texto-derecha a:hover {
   background: linear-gradient(red, #ff6b00);
+  transition: all .3s;
 }
 
 @media screen and (max-width: 650px) {

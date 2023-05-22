@@ -60,6 +60,7 @@ main {
             }
             a:hover {
                 background: $degradado;
+                transition: 0.3s ease;
             }
         }
         .recuadro1__texto-derecha {
@@ -127,6 +128,7 @@ main {
             }
             a:hover {
                 background: $degradado;
+                transition: 0.3s ease;
             }
         }
     }

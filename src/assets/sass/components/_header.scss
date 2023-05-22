@@ -67,6 +67,7 @@ header {
                         background: $degradado;
                         -webkit-background-clip: text;
                         color: transparent;
+                        transition: 0.3s ease;
                     }
                     .enlaces__resaltado-home {
                         background: $degradado;
