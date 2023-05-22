@@ -12,26 +12,22 @@ header {
         .navegador__enlace-titulo {
             text-decoration: none;
             width: 18%;
-
+            display: flex;
+            gap: 5px;
+            
+            .enlace-titulo__barras {
+                background: $degradado;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 35px;
+            }
             .enlace-titulo__titulo {
-                width: 100%;
-                display: flex;
-                gap: 5px;
-
-                .titulo__barras {
-                    background: $degradado;
-                    -webkit-background-clip: text;
-                    color: transparent;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 35px;
-                }
-                .titulo__titulo {
-                    background: $degradado;
-                    -webkit-background-clip: text;
-                    color: transparent;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 35px;
-                }
+                background: $degradado;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 35px;
             }
         }
         .navegador__enlaces {
@@ -40,13 +36,18 @@ header {
 
             .enlaces__img-menu {
                 display: none;
+                transition: 0.5s ease;
             }
             .enlaces__input {
                 display: none;
             }
-            .enlaces__input:checked + .enlaces__ul {
+            .enlaces__input:checked ~ .enlaces__ul {
                 @include flex(column, center, center);
                 gap: 5px;
+            }
+            .enlaces__input:checked ~ .label .enlaces__img-menu {
+                transform: rotate(180deg);
+                transition: 0.5s ease;
             }
             .enlaces__ul {
                 list-style: none;
@@ -62,6 +63,11 @@ header {
                         font-size: 20px;
                         font-family: 'Ubuntu';
                     }
+                    a:hover {
+                        background: $degradado;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                    }
                     .enlaces__resaltado-home {
                         background: $degradado;
                         -webkit-background-clip: text;
@@ -73,14 +79,14 @@ header {
     }
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 670px){
     header .navegador .navegador__enlaces {
         @include flex(column, space-between, flex-end);
         height: 80%;
     }
     header .navegador .navegador__enlaces .enlaces__img-menu {
         display: block;
-        width: 40px;      
+        width: 40px;
     }
     header .navegador .navegador__enlaces .enlaces__ul {
         z-index: 1;

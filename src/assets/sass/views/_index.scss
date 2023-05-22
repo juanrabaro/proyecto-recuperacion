@@ -1,6 +1,7 @@
 main {
     width: 100%;
     font-size: 20px;
+    background-color: $main;
 }
 
 .main-index {
@@ -56,6 +57,9 @@ main {
                 padding-left: 25px;
                 padding-right: 25px;
                 border-radius: 25px;
+            }
+            a:hover {
+                background: $degradado;
             }
         }
         .recuadro1__texto-derecha {
@@ -120,6 +124,9 @@ main {
                 padding-left: 25px;
                 padding-right: 25px;
                 border-radius: 25px;
+            }
+            a:hover {
+                background: $degradado;
             }
         }
     }
